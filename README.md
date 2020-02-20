@@ -17,11 +17,15 @@ git clone https://github.com/abramhindle/CMPUT404-assignment-css-hell.git
 
 -   Removed original inline styles
 -   Added external css link
+-   Removed hard-coded links for Table of Contents
+-   Formatting was also changed from VSCode Extension -- "Prettier"
 
 ### Style changes
 
 -   Added a "old-yellow paper" look with gradients
+-   Used box-shadow to apply gradients to the top and bottom
 -   Used a serif style font (Georgia or Time New Roman)
+-   Modification of font sizes, margins, and padding
 
 # License/Copyright
 

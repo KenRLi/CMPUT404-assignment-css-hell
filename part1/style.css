@@ -2,12 +2,35 @@ body {
 	background-color: #ffeecc;
 	background-image: linear-gradient(to right, #ffe6b3, #ffeecc, #ffe6b3);
 	box-shadow: inset 0 0 100px #ffcc66;
-	padding: 2em;
+	padding: 3em 5em;
 	text-align: center;
 	font-family: Georgia, "Times New Roman", Times, serif;
 }
 
+pre {
+	font-style: italic;
+	text-align: left;
+}
+
 p {
+	text-align: left;
+	text-indent: justify;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+hr {
+	width: 33%;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	margin-left: auto;
+	margin-right: auto;
+	clear: both;
+}
+
+table {
+	margin-left: auto;
+	margin-right: auto;
 }
 
 h1,
@@ -16,7 +39,104 @@ h3,
 h4,
 h5,
 h6 {
+	margin-bottom: 1.5em;
+	text-align: center;
+	font-weight: bold;
 }
 
+/*
+Needed to add some styling to images required by spec
+However, this will break Alice's Adventures in Wonderland's fancy lettering
+ */
 img {
+	border: 2px solid #3b3b3b;
+	border-radius: 25px;
+	box-shadow: 5px 5px 5px #ffcc66;
+}
+
+/*
+CSS below is originally from Alice's Adventures in Wonderland webpage
+http://www.gutenberg.org/files/28885/28885-h/28885-h.htm
+
+Without it, captions (chapter titles) will break from the use of images
+as fancy first letter of a chapter.
+*/
+
+.right {
+	text-align: right;
+}
+
+.center {
+	text-align: center;
+}
+
+.unindent {
+	text-align: justify;
+	margin-top: 0.75em;
+	margin-bottom: 0.75em;
+	margin-left: 6em;
+}
+
+.figleft {
+	float: left;
+	clear: left;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.figright {
+	float: right;
+	clear: right;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.figcenter {
+	margin: auto;
+	text-align: center;
+}
+
+.chapter {
+	text-align: left;
+	font-size: 150%;
+	margin-bottom: 0.5em;
+}
+
+.caption {
+	font-weight: bold;
+	font-size: 70%;
+}
+
+.sidenote {
+	width: 20%;
+	padding-bottom: 0.5em;
+	padding-top: 0.5em;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	margin-left: 1em;
+	float: right;
+	clear: right;
+	margin-top: 1em;
+	text-align: center;
+	font-size: smaller;
+	color: black;
+	background: 0;
+	border: solid 1px;
+}
+
+.pagenum {
+	position: absolute;
+	right: 3em;
+	font-style: italic;
+	text-align: right;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.sig {
+	margin-right: 25%;
+	text-align: right;
+	font-size: 70%;
 }
