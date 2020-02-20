@@ -86,11 +86,11 @@
 
 ** Restrictions
    - [ ] You may use Python
-   - [ ] Must run in your VM (Firefox and Chromium)
-   - [ ] License your content properly (use a Creative Commons License
+   - [x] Must run in your VM (Firefox and Chromium)
+   - [x] License your content properly (use a Creative Commons License
      like CC-BY-ND or CC-BY-SA)
      - Put your name on it!
-   - [ ] If you borrow CSS, always cite the author and the source
+   - [x] If you borrow CSS, always cite the author and the source
 
 ** Recommendations
 
