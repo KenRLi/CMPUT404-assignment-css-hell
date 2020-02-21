@@ -1,0 +1,130 @@
+body {
+	background-color: white;
+	background-image: url("gradpicture1024.jpg");
+	background-size: 128px 128px;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+/*
+Gradient Text 
+From: https://css-tricks.com/snippets/css/gradient-text/
+*/
+h1,
+h2 {
+	background: -webkit-linear-gradient(orange, red);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+/* Nav Bar */
+header {
+	background-color: blue;
+	padding-left: 1em;
+}
+
+header::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+#title {
+	float: left;
+}
+
+nav {
+	float: right;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	float: left;
+	background-image: linear-gradient(orange, red);
+	border-left: 0.05em solid blue;
+}
+
+nav li:first-child {
+	border-left: none;
+}
+
+nav li > a {
+	display: block;
+	text-decoration: none;
+	color: blue;
+	padding: 2em;
+}
+
+/* About Me */
+#about {
+	background-color: green;
+	padding-left: 1em;
+	padding-bottom: 1em;
+	box-shadow: 0px 5px 5px -5px #222629;
+}
+
+#about::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+#profile-pic {
+	float: left;
+	border-radius: 25px;
+	margin-right: 1em;
+}
+
+/* Columns */
+.left-column {
+	float: left;
+	width: 30%;
+}
+
+.right-column {
+	float: left;
+	width: 70%;
+}
+
+/* Overview */
+#overview {
+	background-color: pink;
+	padding-left: 1em;
+	padding-bottom: 1em;
+}
+
+/* Experiences */
+#experience {
+	background-color: blueviolet;
+	margin-left: 1em;
+	padding-left: 1em;
+	padding-bottom: 1em;
+}
+
+#experience table,
+th,
+tr {
+	border: 1em solid chocolate;
+}
+
+/* Skills */
+#skills {
+	background-color: gold;
+	margin-left: 1em;
+	padding-left: 1em;
+	padding-bottom: 1em;
+}
+
+li:nth-child(odd) {
+	color: greenyellow;
+	background-color: lightslategray;
+}
+
+li:nth-child(even) {
+	color: magenta;
+	background-color: black;
+}
